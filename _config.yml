@@ -1,0 +1,25 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+
+
+# Setup
+title:            Kaushik S Kalmady
+tagline:          'Blog'
+description:      'Exploratory eyes into data, computer science and beyond. This is an account of all things technical that I find interesting.'
+baseurl:          /
+
+author:
+  name:           'Kaushik S Kalmady'
+  url:            https://github.com/kaushiksk
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+#github:
+#  repo:           https://github.com/poole/hyde
