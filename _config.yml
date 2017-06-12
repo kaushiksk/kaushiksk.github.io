@@ -1,13 +1,14 @@
 # Dependencies
 markdown:         redcarpet
-highlighter:      pygments
+highlighter:      rouge
+gems: [jekyll-paginate]
 
 # Permalinks
 permalink:        pretty
 
 
 # Setup
-title:            Kaushik S Kalmady
+title:            Kaushik SK
 tagline:          'Blog'
 description:      'Exploratory eyes into data, computer science and beyond.'
 baseurl:          /
