@@ -14,8 +14,9 @@ You can find me on -
 
 * [Facebook](https://www.facebook.com/masterstallion)
 * [GitHub](https://www.github.com/kaushiksk)
-* [MailMe](mailto:kaushikskalmady@gmail.com)
 * [LinkedIn](https://www.in.linkedin.com/in/kaushiksk)
+
+You can also [MailMe](mailto:kaushikskalmady@gmail.com).
 
 This blog is built using the [Hyde Theme](https://github.com/poole/hyde) for [Jekyll](jekyllrb.com).
 
