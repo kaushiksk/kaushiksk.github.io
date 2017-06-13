@@ -1,5 +1,5 @@
 # Dependencies
-markdown:         redcarpet
+markdown:         kramdown
 highlighter:      rouge
 gems: [jekyll-paginate]
 
@@ -17,7 +17,7 @@ author:
   name:           'Kaushik S Kalmady'
   url:            https://github.com/kaushiksk
 
-paginate:         5
+paginate:         1
 
 # Custom vars
 version:          2.1.0
