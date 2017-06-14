@@ -44,8 +44,9 @@ Clearly, Theano is slower. But there's a catch. If you observe, the `image_data_
 Now what's this?
 
 Basically how Tensorflow reads data is *`(N, height, width, channels)` (i.e **channels_last**) and how Theano reads it is `(N, channels, height, width)` (**channels_first**) and because the backend is set to Theano but the image orderings don't match, Keras has to perform extra work shuffling the data dimensions everywhere, and maybe that's what's causing the time burden.
-<sub> * N - number of images,  channels = no. of color channels
- </sub>
+
+<sub> * N - number of images,  channels = no. of color channels </sub>
+ 
 So I explicitly set these values.
 
 ```
@@ -58,7 +59,7 @@ Now on running `$ KERAS_BACKEND="theano" python extractvgg.py`, it should've per
 
 But all works fine when I don't explicitly set the values. I haven't been able to figure out what's causing it, I'll try looking into it when I'm free over the next few days. I've raised an [issue on Github](https://github.com/fchollet/keras/issues/6989), we'll wait and see if someone can reproduce the error and find a solution,or if you can go through it and give it a try, that'd be great too!
 
-The code to the experiments can be found [here](https://gist.github.com/kaushiksk/e6975b9afdff5bbe73e7a703c715b8c6) and Iran these on a CPU with 8GB RAM inside an anaconda environment.
+The code to the experiments can be found [here](https://gist.github.com/kaushiksk/e6975b9afdff5bbe73e7a703c715b8c6) and I ran these on a CPU with 8GB RAM inside an anaconda environment.
 
 And I just realized I haven't spoken about Transfer Learning here. Well, I'll try to do that in detail in the coming posts! I realize this post might seem erratic to a few but I just thought I'll put it out there. See you next time.
 
