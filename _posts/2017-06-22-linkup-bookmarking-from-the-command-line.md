@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linkup : Bookmarking web links from the command line
+title: Linkup - Bookmarking web links from the command line
 ---
 
 
