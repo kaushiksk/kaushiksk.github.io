@@ -11,11 +11,13 @@ title: Linkup - Bookmarking web links from the command line
 Say you're reading about The Beatles today. You read from about 3-4 resources online and listen to a few songs on Youtube. Or maybe you were just reading up on your favorite topic.
 
 -  Wouldn't it be nice if a month later you could just use a few keywords to load all those links at once ?
--  Wouldn't it better if you could somehow group them into topics and subtopics? Say, "Beatles Bio" would load their wiki and some other relevant pages, "Beatles songs" would load the Youtube links you had visited.
-- And wouldn't it be even better if when someone asked you "Who are The Beatles?", you could easily share all these links with them immediately?
+-  Wouldn't it be better if you could somehow group them into topics and subtopics? Say, "Beatles Bio" would load their wiki and some other relevant pages, "Beatles songs" would load the Youtube links you had visited.
+- And how if when someone asked "Who are The Beatles?", you could easily share all these links with them immediately?
 
 
-So I thought I'll just build a tool that does this. All we need is Python's `json` and `webbrowser` modules.
+So I thought I'll just build a tool that does this. 
+
+All we need is Python's `json` and `webbrowser` modules.
 
 ```python
 import json
@@ -102,9 +104,11 @@ I name the file `linkup` and add the shebang `#!/usr/bin/python3` on top. This w
 Next I copy the file to my `~/bin/` directory (you can put it any directory that's part of your system's `$PATH` variable), add the code for handling command line arguments, some more helper functions, and made sure that the json files are all stored in a hidden folder to reduce clutter and we're good to go.
 
 To generate the above JSON file, all I need to do is type:
+
 `$ linkup -a beatles bio http://sgtpepper.thebeatles.com/ https://en.wikipedia.org/wiki/The_Beatles`
 
 and then 
+
 `$ linkup -a beatles songs https://www.youtube.com/user/TheBeatlesVEVO`
 
 Now to load them all at once in a webbrowser,
