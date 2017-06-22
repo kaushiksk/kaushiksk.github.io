@@ -49,7 +49,7 @@ Basically how Tensorflow reads data is *`(N, height, width, channels)` (i.e **ch
  
 So I explicitly set these values.
 
-```
+```python
 from keras import backend as K
 K.set_image_data_format("channels_first")
 K.set_image_dim_ordering("th")
