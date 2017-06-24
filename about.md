@@ -5,7 +5,7 @@ title: About
 
 I'm Kaushik S Kalmady. Computer Science Undergraduate at National Institute of Technology Karnataka. 
 
-I love python and data! I'm interested in Machine Learning, Deep Learning and Open Source.
+I love python, data and the Linux Terminal! I'm interested in Machine Learning, Deep Learning and Open Source.
 
 I love to [read](https://www.goodreads.com/kaushiksk) and admire cinema and will always be keen to strike up a conversation about them!
 
