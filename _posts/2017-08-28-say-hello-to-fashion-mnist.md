@@ -10,4 +10,5 @@ It is a data-set designed to be an in-place replacement for MNIST, consisting of
 I haven't yet looked at it in detail. Probably the subject matter of the next blog post. Pretty excited to get my hands on it! It sure does look more
 comprehensible and much more complex than MNIST. You should check it out if you haven't!
 
-Github Repo : https://github.com/zalandoresearch/fashion-mnist
+## Links
+[Github Repo](https://github.com/zalandoresearch/fashion-mnist)
