@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supressing Tensorflow Logs
+title: Suppressing Tensorflow Logs
 ---
 
 If you've used tensorflow to build your Machine Learning models or used it as a back-end with Keras, you've definitely encountered a whole lot of debugging info that's output to the terminal before your program begins execution. These are sometimes error messages, most of the time warnings and in some cases additional info as well and can be extremely useful. But in most cases all you really care about is observing the output from your program than wade through a whole lot of tensorflow jargon about how you can improve computation speed (which in fact is pretty important). 
