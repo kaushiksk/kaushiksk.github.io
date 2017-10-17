@@ -12,7 +12,7 @@ title:            Kaushik SK
 tagline:          'Blog'
 description:      'Musings and findings from all things learnt, built and explored.'
 url:              http://kaushiksk.me
-baseurl:          "/"
+baseurl:          ""
 
 author:
   name:           'Kaushik S Kalmady'
