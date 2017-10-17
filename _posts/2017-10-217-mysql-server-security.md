@@ -9,6 +9,14 @@ We didn't have any sensitive information and our tables weren't of much importan
 
 But clearly, this was a mistake on my part, something that I shouldn't have overlooked. There are thousands of bots scanning the internet for MySQL server instances and cracking weak passwords isn't a big deal for them. By allowing access to all hosts I was asking for trouble. There are [tutorials](https://null-byte.wonderhowto.com/how-to/hack-databases-hunting-for-microsofts-sql-server-0148993/) on how you can use tools to search, exploit and take control of remote MySQL server instances.
 
+To see this in action,
+
+`$ nmap -sV -p 3306 135.194.163.193/24`
+
+<small>Replace the IP Address with that of your remote host to scan all the hosts on that subnet for running MySQL instances.</small>
+
+This command will search for all open MySQL instances(which run on port 3306 by default) in the provided subnet. It will output the canonical name associated with the domain, the state of the server and the version of OS running on the server for each host. From here on you just need to choose the one's that are in the `open` state and try to break into them. More details [here](https://null-byte.wonderhowto.com/how-to/hack-databases-cracking-sql-server-passwords-owning-server-0149636/).
+
 Sensitive information or not, step 1 is always follow basic security measures. Lesson learnt. There is always someone waiting to exploit your resources. There was absolutely no reason for me to not spend 2 extra minutes to grant acces only to my teammates and my machine's IP address to access the db.
 
 I completely uninstalled MySQL server, removed all associated files, installed it again, and made sure this time I provided access to specific remote hosts only.
