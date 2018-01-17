@@ -9,9 +9,36 @@ I also dived a bit deeper into the concept of private variables in Python and ho
 
 Python also has it's own version of setter and getter functions in the form of `@property` function. I came across this [blog post](https://codefisher.org/catch/blog/2015/05/17/python-property-function-why-no-private-methods/) that explains this is considerable detail and finesse. I ended up incorporating all of these into my RSA implementation. 
 
-Now that I had a decent module ready, I thought it was a good time to learn package it for easy installation for anybody who wants to use it. It turned out to be easier that I thought. This [website](https://python-packaging.readthedocs.io/en/latest/minimal.html) covers everything you would want to know with a lot of clear examples. It is really just as simply as editing a `setup.py` template. My major challenge was to get the code running on both python 2 & 3 uniformly without bugs, and I was able to fix this after a few hickups.
+Now that I had a decent module ready, I thought it was a good time to learn package it for easy installation for anybody who wants to use it. It turned out to be easier that I thought. This [website](https://python-packaging.readthedocs.io/en/latest/minimal.html) covers everything you would want to know with a lot of clear examples. It is really just as simply as editing a `setup.py` template and adding it to your modules root directory. For the [rsasim](https://github.com/kaushiksk/rsasim/) module, it looks like this.
 
-All in all, this was a really good learning experience. You can install the [rsasim](https://github.com/kaushiksk/rsasim) module from my github page. Feel free to play around with the source code and let me know if you come across any bugs. I've spent a lot of time writing inline documentation, README as well as examples, so using it shouldn't pose any problems. 
+```python
+from setuptools import setup
+
+def readme():
+        with open('README.md') as f:
+            return f.read()
+
+setup(name='rsasim',
+      version='0.1',
+      description='A simple pure python implementation of RSA',
+      long_description=readme(),
+      url='https://github.com/kaushiksk/rsasim',
+      author='Kaushik S Kalmady',
+      author_email='kaushikskalmady@yahoo.in',
+      license='MIT',
+      packages=['rsasim'],
+      scripts=['bin/isprime', 'bin/genprime'],
+      include_package_data=True,
+      zip_safe=False)
+
+```
+As you can see, most of the fields are self explanatory. Anyone can now install the module by download the source and running:
+
+`$ python setup.py install` 
+
+My major challenge was to get the code running on both python 2 & 3 uniformly without bugs, and I was able to fix this after a few hickups.
+
+All in all, this was a really fun learning experience. You can install the [rsasim](https://github.com/kaushiksk/rsasim) module from my github page. Feel free to play around with the source code and let me know if you come across any bugs. I've spent a lot of time writing inline documentation, README as well as examples, so using it shouldn't pose any problems. 
 
 I've also created another repository [rsa-from-scratch](https://github.com/kaushiksk/rsa-from-scratch/) where you can implement rsa from scratch in your favourite language and send a PR.
 
