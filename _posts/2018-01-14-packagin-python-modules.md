@@ -32,13 +32,13 @@ setup(name='rsasim',
       zip_safe=False)
 
 ```
-As you can see, most of the fields are self explanatory. Anyone can now install the module by download the source and running:
+As you can see, most of the fields are self explanatory. Anyone can now install the module by downloading the source and running:
 
 `$ python setup.py install` 
 
 My major challenge was to get the code running on both python 2 & 3 uniformly without bugs, and I was able to fix this after a few hickups.
 
-All in all, this was a really fun learning experience. You can install the [rsasim](https://github.com/kaushiksk/rsasim) module from my github page. Feel free to play around with the source code and let me know if you come across any bugs. I've spent a lot of time writing inline documentation, README as well as examples, so using it shouldn't pose any problems. 
+All in all, this was a really fun learning experience. You can install the [rsasim](https://github.com/kaushiksk/rsasim) module from my [github](https://github.com/kaushiksk/rsasim). Feel free to play around with the source code and let me know if you come across any bugs. I've spent a lot of time writing inline documentation, README as well as examples, so using it shouldn't pose any problems. 
 
 I've also created another repository [rsa-from-scratch](https://github.com/kaushiksk/rsa-from-scratch/) where you can implement rsa from scratch in your favourite language and send a PR.
 
