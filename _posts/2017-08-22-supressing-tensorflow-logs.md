@@ -17,6 +17,6 @@ How do we do this in python? Simple. Just add these two lines on top of your cod
 
 ```python
 import os
-os.environ["TF_CPP_MIN_LOG_LEVEL"] = 3
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = '3'
 ```
 You can read this [stack overflow post](https://stackoverflow.com/questions/35911252/disable-tensorflow-debugging-information) for more.

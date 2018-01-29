@@ -5,7 +5,7 @@ title: Running a block of python code within vim
 
 I've been configuring vim to work as a python IDE and have added quite a few enhancements. There's a handy plugin called [python-mode](https://github.com/klen/python-mode) that really powers up your vim for python development. Some notable features include static code analysis, code completion, and executing the script with `<Leader> m` which prints the output in a new split.
 
-But a lot of times what I really want to do is execute a few simple commands, or a simple for loop and checkout the results, and to do this I have to move out of vim to a separate window with a python interpretor. But that's not required at all!
+But a lot of times what I really want to do is execute a few simple commands, or a simple for loop and checkout the results, and to do this I have to move out of vim to a separate window with a python interpreter. But that's not required at all!
 
 I found this really cool [stack overflow answer](https://stackoverflow.com/questions/501585/how-can-you-use-python-in-vim) that explains a very handy trick.
 
