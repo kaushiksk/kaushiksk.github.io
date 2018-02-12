@@ -11,9 +11,9 @@ But my problem was that I already had about 20-25 plugins installed as git repos
 
 `$ git submodule add remote-repo-url local/dest/of/plugin`
 
-Pretty lobarious to repeat 25 times but a perfect task to automate!
+Pretty laborious to repeat 25 times but a perfect task to automate!
 
-I use `os` and `subprocess` modules in Python2 which are available by default. So what we need to do is simple. Enter every plugin directory, grab the remote url by running `git remote -v`, navigate back to the `/.vim` directory and add that repo as a submodule.
+I used the `os` and `subprocess` modules in Python2 which are available by default. So what we need to do is simple. Enter every plugin directory, grab the remote url by running `git remote -v`, navigate back to the `/.vim` directory and add that repo as a submodule.
 
 We'll use the following three functions :
  - **os.chdir(path)**                     : This is equivalent to `cd path`.
