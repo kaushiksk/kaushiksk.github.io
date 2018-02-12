@@ -91,11 +91,10 @@ plugins = os.listdir(bundle_folder)
 
 for plugin in plugins:
     os.chdir(bundle_folder + plugin)
-    
-	out = subprocess.check_output(["git", "remote","-v"])
-	os.chdir(HOME + ".vim/")
-	subprocess.call(["git", "submodule", "add", out.split()[1], bundle_folder + plugin ])
-	print "Done adding ", plugin
+    out = subprocess.check_output(["git", "remote","-v"])
+    os.chdir(HOME + ".vim/")
+    subprocess.call(["git", "submodule", "add", out.split()[1], bundle_folder + plugin ])
+    print "Done adding ", plugin
 ```
 
 Of course, this assumes that every plugin directory under the `bundle` directory is a git repo. We'll add a simple try catch just in case.
