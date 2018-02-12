@@ -119,8 +119,8 @@ for plugin in plugins:
         print "Done adding ", plugin
 
     except:
-        print "Leaving ", plugin, ". Not a git repository"
-		os.chdir(HOME + ".vim/")
+        print "Leaving ", plugin, ". Not a git repository"o
+        os.chdir(HOME + ".vim/")
 ```
 
 And that's it!
