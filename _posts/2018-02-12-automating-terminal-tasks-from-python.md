@@ -15,7 +15,7 @@ Pretty laborious to repeat 25 times but a perfect task to automate!
 
 I used the `os` and `subprocess` modules in Python2 which are available by default. So what we need to do is simple. Enter every plugin directory, grab the remote url by running `git remote -v`, navigate back to the `/.vim` directory and add that repo as a submodule.
 
-We'll use the following three functions :
+We'll use the following four functions :
  - **os.chdir(path)**                     : This is equivalent to `cd path`.
  - **os.listdir(path)**                   : returns a list of directory in `path`
  - **subprocess.call(command)**           : runs `command` as a subprocess
@@ -51,7 +51,8 @@ out = subprocess.check_output(["git", "remote","-v"])
 ```
 
 Notice how I passed the command as a list. We now have the output from that command as a string in `out`.
-On your terminal running `$ git remote -v` should give an output like this
+
+On your terminal running ` git remote -v` should give an output like this
 ```
 origin  https://github.com/user/repo.git (fetch)
 origin  https://github.com/user/repo.git (push)
