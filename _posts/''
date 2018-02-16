@@ -52,7 +52,7 @@ out = subprocess.check_output(["git", "remote","-v"])
 
 Notice how I passed the command as a list. We now have the output from that command as a string in `out`.
 
-On your terminal running `git remote -v` should give an output like this
+On your terminal running ` git remote -v` should give an output like this
 ```
 origin  https://github.com/user/repo.git (fetch)
 origin  https://github.com/user/repo.git (push)
@@ -119,7 +119,7 @@ for plugin in plugins:
         print "Done adding ", plugin
 
     except:
-        print "Leaving ", plugin, ". Not a git repository"
+        print "Leaving ", plugin, ". Not a git repository"o
         os.chdir(HOME + ".vim/")
 ```
 
