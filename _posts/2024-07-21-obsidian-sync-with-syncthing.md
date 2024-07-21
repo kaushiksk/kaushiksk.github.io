@@ -12,4 +12,4 @@ You can turn off syncthing once you're done, and turn it back on when you want t
 
 ### References
  - [Obsidian](https://obsidian.md)
- - [[Syncthing](https://syncthing.net/)
+ - [Syncthing](https://syncthing.net/)
